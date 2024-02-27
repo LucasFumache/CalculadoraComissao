@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".PaginaInicial">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="438dp"
+        android:layout_height="84dp"
+        android:background="#3F51B5"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        tools:layout_editor_absoluteX="-14dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="350dp"
+        android:layout_height="520dp"
+        android:background="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salario Final:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <EditText
+        android:id="@+id/Kmrodados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Km Rodados:"
+        android:inputType="number|numberDecimal"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <EditText
+        android:id="@+id/Salariofixo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Salario Fixo"
+        android:inputType="number|numberDecimal"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381" />
+
+    <EditText
+        android:id="@+id/Salariofinal"
+        android:layout_width="323dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Salario Final:"
+        android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:backgroundTint="#3F51B5"
+        android:backgroundTintMode="add"
+        android:text="Calcular"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <EditText
+        android:id="@+id/comissao"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Comissão"
+        android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+</androidx.constraintlayout.widget.ConstraintLayout>
